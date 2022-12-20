@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Oxygen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>TRC Website</title>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <img src="imageS/TRC_white_logo.png" alt="TRC Logo" />
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">OUR WORKS</a></li>
+            <li><a href="#">CONTACT US</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+      </nav>
+      <div class="textbox">
+        <h1>Tech Researchers Club</h1>
+        <p>
+          The first club for researchers in Vellore Institute of Technology,Chennai
+        </p>
+      </div>
+    </section>
+    <section class="course">
+      <h1>What is TRC?</h1>
+      <p class="npm">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aperiam
+        deserunt, minima atque natus labore quo iste accusamus laboriosam animi
+        suscipit voluptatibus, nisi ipsam maiores sed, eos nam qui maxime.
+      </p>
+      <div class="row">
+        <div class="course-column">
+          <h3>Feature-1</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+        </div>
+        <div class="course-column">
+          <h3>Feature-2</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+        </div>
+        <div class="course-column">
+          <h3>Feature-3</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="facilities">
+      <h1>Board Members and Leads</h1>
+      <p>Content to be given</p>
+      <div class="row">
+        <div class="facilities-col">
+          <img src="images/Faculty Coordinator.jpg" />
+          <h3>Faculty Coordinator</h3>
+          <p>Content to be given</p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/Anirudh Vasudev.jpeg" />
+          <h3>President</h3>
+          <p>Content to be given</p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/Harsh Malhotra.jpeg" />
+          <h3>Vice-President</h3>
+          <p>Content to be given</p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/Leads TRC.JPG" />
+          <h3>The department Leads</h3>
+          <p>Content to be given</p>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="content">
+        <div class="left-side">
+          <div class="address details">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="topic">Address</div>
+            <div class="text-one">Vellore Institute of Technology</div>
+            <div class="text-two">Chennai</div>
+          </div>
+          <div class="phone details">
+            <i class="fas fa-phone-alt"></i>
+            <div class="topic">Phone</div>
+            <div class="text-one">needed</div>
+          </div>
+          <div class="email details">
+            <i class="fas fa-envelope"></i>
+            <div class="topic">Email</div>
+            <div class="text-one">techresearchers.vitc@gmail.com</div>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="topic-text">Send us a message</div>
+          <p>You can send us suggestions and any message here</p>
+        <form action="#">
+          <div class="input-box">
+            <input type="text" placeholder="Enter your name">
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="Enter your email">
+          </div>
+          <div class="input-box message-box">
+            <input type="text" placeholder="Enter your message">
+            
+          </div>
+          <div class="button">
+            <input type="button" value="Send Now" >
+          </div>
+        </form>
+      </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showmenu() {
+      navLinks.style.right = "0px";
+    }
+
+    function hidemenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+</html>
