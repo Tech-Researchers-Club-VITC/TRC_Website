@@ -45,7 +45,7 @@ nav img {
   content: "";
   width: 0%;
   height: 2px;
-  background: #000000;
+  background-color: #ff4d4d;
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -124,6 +124,9 @@ h3 {
   }
   .nav-links ul li {
     display: block;
+  }
+  .nav-links ul li a {
+    color: black;
   }
   .nav-links {
     position: absolute;
