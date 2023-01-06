@@ -13,7 +13,7 @@ function hidemenu() {
 // For the scroll Menu active part code:
 
 $(document).ready(function (e) {
-  $("a[href*=#]").bind("click", function () {
+  $("a[href*=#]").bind("click", function (e) {
     e.preventDefault();
     var target = $(this).attr("href");
     $("html, body")
@@ -22,12 +22,11 @@ $(document).ready(function (e) {
         {
           scrollTop: $(target).offset().top,
         },
-        600,
+        1000,
         function () {
           location.hash = target;
         }
       );
-
     return false;
   });
 });
