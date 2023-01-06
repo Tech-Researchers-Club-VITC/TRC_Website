@@ -5,6 +5,7 @@
   font-family: "Lora", serif;
   font-family: "Oxygen", sans-serif;
   font-family: "Poppins", sans-serif;
+  transition: all 0.25s ease;
 }
 .header {
   min-height: 100vh;
@@ -313,4 +314,27 @@ h3 {
     width: 100%;
     margin-left: 0;
   }
+}
+.course-column p {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22px;
+  text-align: left;
+  margin-left: 0;
+}
+.course-column ul li {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22px;
+  text-align: left;
+  list-style-position: inside;
+}
+.hello {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 80px;
+  margin-bottom: 2%;
 }
