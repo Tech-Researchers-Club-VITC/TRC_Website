@@ -5,7 +5,7 @@
   font-family: "Lora", serif;
   font-family: "Oxygen", sans-serif;
   font-family: "Poppins", sans-serif;
-  transition: all 0.25s ease;
+  transition: all 0.75s ease;
 }
 .header {
   min-height: 100vh;
@@ -337,4 +337,19 @@ h3 {
   text-align: center;
   padding-top: 80px;
   margin-bottom: 2%;
+}
+.connect {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2%;
+}
+.tech-res {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 4%;
+}
+.footer {
+  padding-top: 2%;
+  text-align: center;
 }
