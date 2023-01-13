@@ -111,6 +111,7 @@ nav .fa {
   box-sizing: border-box;
   background: #d73636;
   transition: 0.25s;
+  aspect-ratio: 3/2;
 }
 h3 {
   font-weight: bold;
