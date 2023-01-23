@@ -47,7 +47,7 @@ body {
   text-align: center;
   padding: 2rem;
   border-radius: .5rem;
-  background: #000000;
+  background: #1a191900;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
 }
@@ -109,3 +109,7 @@ body {
   padding: 1rem 0;
   line-height: 2;
 }
+#more {display: none;}
+#more1{display: none;}
+#more2{display: none;}
+
