@@ -184,7 +184,7 @@ h3 {
 }
 
 .container {
-  width: 100%;
+  width: 92%;
   background: #fff;
   border-radius: 6px;
   padding: 20px 60px 30px 40px;
@@ -244,7 +244,7 @@ h3 {
 }
 .right-side .input-box {
   height: 50px;
-  width: 90%;
+  width: 100%;
   margin: 12px 0;
 }
 .right-side .input-box input,
