@@ -166,7 +166,7 @@ h3 {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
 }
 .facilities-col {
-  flex-basis: 30%;
+  flex-basis: 24%;
   border-radius: 10px;
   margin-bottom: 5%;
 }
