@@ -11,11 +11,23 @@
   min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(images/TRC1.png);
+    url(images/trc\ 2.png);
   background-size: cover;
   background-position: center;
   position: relative;
   color: white;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #5f5f5f;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: crimson;
+  border-radius: 5rem;
 }
 nav {
   display: flex;
@@ -46,7 +58,7 @@ nav img {
   content: "";
   width: 0%;
   height: 2px;
-  background-color: #ff4d4d;
+  background-color: crimson;
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -109,9 +121,10 @@ nav .fa {
   margin-bottom: 5%;
   padding: 20px 12px;
   box-sizing: border-box;
-  background: #d73636;
+  background: crimson;
   transition: 0.25s;
   aspect-ratio: 3/2;
+  font-size: large;
 }
 h3 {
   font-weight: bold;
@@ -354,3 +367,4 @@ h3 {
   padding-top: 2%;
   text-align: center;
 }
+
