@@ -34,11 +34,11 @@ section .leftBox{
 section .leftBox .content1{
   color: #fff;
   background:rgba(0, 0, 0, 0.5);
-  padding: 50.8px;
+  padding: 67.4px;
   transition: 0.5s;
 }
 section .leftBox .content1:hover{
-  background: #e91e63;
+  background: crimson;
 }
 section .leftBox .content1 h1{
   margin: 0;
@@ -89,7 +89,7 @@ section .events1 ul li .time1{
 
 }
 section .events1 ul li:hover .time1{
-  background: #e91e63;
+  background: crimson;
 }
 section .events1 ul li .time1 h2{
   position: absolute;
@@ -137,9 +137,9 @@ section .events1 ul li .details1 button{
   border-radius: 5px;
 }
 section .events1 ul li .details1 button:hover{
-  background: #e91e63;
+  background: crimson;
   color: rgb(255, 255, 255);
-  border-color: #e91e63;
+  border-color: crimson;
 
 }
 
