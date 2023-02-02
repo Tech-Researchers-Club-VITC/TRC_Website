@@ -34,7 +34,7 @@ section .leftBox{
 section .leftBox .content1{
   color: #fff;
   background:rgba(0, 0, 0, 0.5);
-  padding: 40px;
+  padding: 50.8px;
   transition: 0.5s;
 }
 section .leftBox .content1:hover{
