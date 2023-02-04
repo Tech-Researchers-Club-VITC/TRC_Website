@@ -302,7 +302,7 @@ h3 {
   padding-top: 80px;
 }
 .facilities-col img:hover {
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px 0px crimson;
 }
 .facilities-col {
   flex-basis: 24%;
