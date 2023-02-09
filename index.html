@@ -199,18 +199,18 @@
         <div class="right-side">
           <div class="topic-text">Send us a message</div>
           <p>You can send us suggestions and any message here</p>
-          <form action="#">
+          <form id="contact-form" method="post" action="contact.php" role="form">
             <div class="input-box">
-              <input type="text" placeholder="Enter your name" />
+              <input  id="form_name" type="text" name="name" placeholder="Enter your name" />
             </div>
             <div class="input-box">
-              <input type="text" placeholder="Enter your email" />
+              <input  id="form_email" type="email" name="email" placeholder="Enter your email" />
             </div>
             <div class="input-box message-box">
-              <input type="text" placeholder="Enter your message" />
+              <input id="form_message" name="message" placeholder="Enter your message" />
             </div>
             <div class="button">
-              <input type="button" value="Send Now" />
+              <input type="button" name="submit" value="Send Now" />
             </div>
           </form>
         </div>
@@ -266,3 +266,4 @@
     <script type="text/javascript" src="scripts.js"></script>
   </body>
 </html>
+
