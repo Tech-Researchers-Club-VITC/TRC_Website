@@ -140,7 +140,21 @@ function myFunction() {
       moreText.style.display = "inline";
     }
   }
+  function myFunction10() {
+    var dots = document.getElementById("dots10");
+    var moreText = document.getElementById("more10");
+    var btnText = document.getElementById("myBtn10");
 
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }
  /* function myFunction7() {
     var dots = document.getElementById("dots7");
     var moreText = document.getElementById("more7");
