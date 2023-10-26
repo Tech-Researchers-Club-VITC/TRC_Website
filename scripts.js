@@ -13,7 +13,7 @@ function hidemenu() {
 // For the scroll Menu active part code:
 
 $(document).ready(function (e) {
-  $("a[href*=#]").bind("click", function (e) {
+  $("a[href*=\\#]").bind("click", function (e) {
     e.preventDefault();
     var target = $(this).attr("href");
     $("html, body")
