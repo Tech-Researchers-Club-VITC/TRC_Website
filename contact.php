@@ -1,12 +1,12 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
- name = $_POST["name"];
+  $name = $_POST["name"];
   $email = $_POST["email"];
   $message = $_POST["message"];
 
   // Send email
-  $to = "abinav858@gmail.com";
-  $subject "New message from $name";
+  $to = "spidy@ultroid.tech";
+  $subject = "New message from $name";
   $body = "Name: $name\nEmail: $email\nMessage: $message";
   $headers = "From: $email";
 
