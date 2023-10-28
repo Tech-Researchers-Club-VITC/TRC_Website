@@ -410,7 +410,7 @@ h3 {
   display: inline-block;
   margin-top: 12px;
 }
-.right-side .button input[type="button"] {
+.right-side .button input[type="submit"] {
   color: #fff;
   font-size: 18px;
   outline: none;
@@ -421,7 +421,7 @@ h3 {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.button input[type="button"]:hover {
+.button input[type="submit"]:hover {
   background: #ff4d4d;
 }
 
