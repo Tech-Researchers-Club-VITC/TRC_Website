@@ -18,4 +18,4 @@ function handleFormSubmit(event) {
 
 // Add event listener to the form submit button
 const form = document.getElementById('contact-form');
-form.addEventListener('form_submit', handleFormSubmit);
+form.addEventListener('submit', handleFormSubmit);
