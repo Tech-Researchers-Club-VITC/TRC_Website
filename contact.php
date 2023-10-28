@@ -11,8 +11,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $headers = "From: $email";
 
   if (mail($to, $subject, $body, $headers)) {
- echo "Thank you for your message!";
-  } else {
+    echo "Thank you for your message!";
+  } 
+  else {
     echo "There was a problem sending your message. Please try again.";
   }
 }

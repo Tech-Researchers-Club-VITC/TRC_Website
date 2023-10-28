@@ -259,7 +259,7 @@ h3 {
 .course-column:hover {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
 }
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   .textbox h1 {
     font-size: 20px;
   }
@@ -270,21 +270,24 @@ h3 {
     color: black;
   }
   .nav-links {
-    position: absolute;
+    position:absolute;
     background-color: white;
     color: #000000;
-    height: 100vh;
-    width: 200px;
+    height: 40vh;
+    /*width:200px;*/
     text-align: center;
-    top: 0;
-    right: -200px;
+    top: -10000px;
+    right: 20px;
     z-index: 2;
-    transition: 0.5s;
+    transition: 0.7s;
+    border-radius: 10% 10% 10% 10%; 
+    padding-top: 10%;
+
   }
   nav .fa {
     display: block;
     color: black;
-    margin: 15px;
+    margin: 10px;
     font-size: 20px;
     cursor: pointer;
   }
@@ -382,13 +385,13 @@ h3 {
 }
 .right-side .input-box {
   height: 50px;
-  width: 100%;
+  width: 90%;
   margin: 12px 0;
 }
 .right-side .input-box input,
 .right-side .input-box textarea {
   height: 100%;
-  width: 100%;
+  width: 90%;
   border: none;
   outline: none;
   font-size: 16px;
