@@ -16,13 +16,18 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
       (function () {
-        emailjs.init('ObkJuTzQvNLMseRl');
+        emailjs.init('-ObkJuTzQvNLMseRl');
       })();
     </script>
     <script>
       const handleForm = async (e) => {
         try {
-          await emailjs.sendForm('service_tcqgr9m', 'template_8kqw25j', {to_name: 'Tech Researchers Club', from_name: document.getElementById('form_name').value, message: document.getElementById('form_message').value, reply_to: document.getElementById('form_email').value});
+          await emailjs.send('service_tcqgr9m', 'template_8kqw25j', {
+            to_name: 'Tech Researchers Club',
+            from_name: document.getElementById('form_name').value,
+            message: document.getElementById('form_message').value,
+            reply_to: document.getElementById('form_email').value
+          });
           alert('email sent!');
         } catch (error) {
           console.error(error);
@@ -213,7 +218,7 @@
         <div class="right-side">
           <div class="topic-text">Send us a message</div>
           <p>You can send us suggestions and any message here</p>
-          <form id="contact-form" role="form" onSubmit="handleForm()" >
+          <form id="contact-form" role="form" onSubmit="handleForm(); return false;"">
             <div class="input-box">
               <input  id="form_name" type="text" name="name" placeholder="Enter your name" />
             </div>
