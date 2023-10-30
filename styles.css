@@ -157,7 +157,7 @@ html::-webkit-scrollbar-thumb {
 }
 nav {
   display: flex;
-  padding: 2% 6%;
+  padding: 6% 6%;
   justify-content: space-between;
   align-items: center;
 }
@@ -259,7 +259,7 @@ h3 {
 .course-column:hover {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
 }
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   .textbox h1 {
     font-size: 20px;
   }
@@ -270,21 +270,23 @@ h3 {
     color: black;
   }
   .nav-links {
-    position: absolute;
+    position:absolute;
     background-color: white;
     color: #000000;
-    height: 100vh;
-    width: 200px;
+    height: 47vh;
+    width:200px;
     text-align: center;
-    top: 0;
-    right: -200px;
+    top: -10000px;
+    right: 20px;
     z-index: 2;
-    transition: 0.5s;
+    transition: 0.7s;
+    border-radius: 5% 5% 5% 5%;
+    padding-top: 5%;
   }
   nav .fa {
     display: block;
     color: black;
-    margin: 15px;
+    margin: 10px;
     font-size: 20px;
     cursor: pointer;
   }
@@ -382,13 +384,13 @@ h3 {
 }
 .right-side .input-box {
   height: 50px;
-  width: 100%;
+  width: 90%;
   margin: 12px 0;
 }
 .right-side .input-box input,
 .right-side .input-box textarea {
   height: 100%;
-  width: 100%;
+  width: 90%;
   border: none;
   outline: none;
   font-size: 16px;
@@ -407,7 +409,7 @@ h3 {
   display: inline-block;
   margin-top: 12px;
 }
-.right-side .button input[type="button"] {
+.right-side .button input[type="submit"] {
   color: #fff;
   font-size: 18px;
   outline: none;
@@ -418,7 +420,7 @@ h3 {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.button input[type="button"]:hover {
+.button input[type="submit"]:hover {
   background: #ff4d4d;
 }
 

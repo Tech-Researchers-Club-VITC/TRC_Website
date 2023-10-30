@@ -1,19 +1,18 @@
 // For the mobile-phone layout (navbar {side bar})
-
 var navLinks = document.getElementById("navLinks");
-
 function showmenu() {
-  navLinks.style.right = "0px";
+  navLinks.style.right = "20px";
+  navLinks.style.top = "20px";
+  navLinks.style.display = block;
 }
-
 function hidemenu() {
-  navLinks.style.right = "-200px";
+  navLinks.style.right = "20px";
+  navLinks.style.top = "-10000px";
+  navLinks.style.display = none;
 }
-
 // For the scroll Menu active part code:
-
 $(document).ready(function (e) {
-  $("a[href*=#]").bind("click", function (e) {
+  $("a[href*=\\#]").bind("click", function (e) {
     e.preventDefault();
     var target = $(this).attr("href");
     $("html, body")
@@ -30,7 +29,6 @@ $(document).ready(function (e) {
     return false;
   });
 });
-
 $(window)
   .scroll(function () {
     var scrollDistance = $(window).scrollTop();

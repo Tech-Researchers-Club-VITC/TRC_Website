@@ -13,6 +13,28 @@
       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Oxygen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init('-ObkJuTzQvNLMseRl');
+      })();
+    </script>
+    <script>
+      const handleForm = async (e) => {
+        try {
+          await emailjs.send('service_tcqgr9m', 'template_8kqw25j', {
+            to_name: 'Tech Researchers Club',
+            from_name: document.getElementById('form_name').value,
+            message: document.getElementById('form_message').value,
+            reply_to: document.getElementById('form_email').value
+          });
+          alert('email sent!');
+        } catch (error) {
+          console.error(error);
+          alert('Failed to send email');
+        }
+      };
+    </script>
     <link
       rel="stylesheet"
       type="text/css"
@@ -28,12 +50,12 @@
         <div class="nav-links" id="navLinks">
           <i class="fa fa-times" onclick="hidemenu()"></i>
           <ul>
-            <li><a href="#1" class="links">HOME</a></li>
-            <li><a href="#2" class="links">ABOUT US</a></li>
-            <li><a href="blog.html" class="links" >OUR WORKS</a></li>
-            <li><a href="photo.html" class="links" >PHOTO GALLERY</a></li>
-            <li><a href="lead.html" class="links" >LEADS</a></li>
-            <li><a href="#3" class="links">CONTACT US</a></li>
+            <li><a href="#1" class="links" onclick="hidemenu()">HOME</a></li>
+            <li><a href="#2" class="links" onclick="hidemenu()">ABOUT US</a></li>
+            <li><a href="blog.html" class="links" onclick="hidemenu()">OUR WORKS</a></li>
+            <li><a href="photo.html" class="links" onclick="hidemenu()">PHOTO GALLERY</a></li>
+            <li><a href="lead.html" class="links" onclick="hidemenu()">LEADS</a></li>
+            <li><a href="#3" class="links" onclick="hidemenu()">CONTACT US</a></li>
           </ul>
         </div>
         <i class="fa fa-bars" onclick="showmenu()"></i>
@@ -45,17 +67,17 @@
           newest in technology. (The first club for researchers in Vellore
           Institue of Technology, Chennai)
         </p>
-        <a href='https://tech-researchers-club-vitc.github.io/TRC_Website/TRC%20Blogs/' target="_blank"><button class="glow-on-hover"id="myBtn5" style="color: white; font-size: medium; font-weight: bold;">TRC Blogs</button></a>
+        <a href='https://trc.sppidy.live/TRC%20Blogs/index.html' target="_blank"><button class="glow-on-hover"id="myBtn5" style="color: white; font-size: medium; font-weight: bold;">TRC Blogs</button></a>
       </div>
     </section>
-    <section>
+    <!--<section>
       <div class="leftBox">
         <div class="content1">
           <h1>Upcoming Events</h1>
           <p>Looking for exciting events to attend? Follow this section for quick updates on upcoming events from Tech Researchers Club.</p>
         </div>
       </div>
-      <!-- <div class="events1">
+      <div class="events1">
         <ul>
           <li>
             <div class="time1">
@@ -79,8 +101,8 @@
             <div style="clear:both;"></div>
           </li>
         </ul>
-      </div> -->
-    </section>
+      </div>
+    </section> -->
     <div class="course page-section" id="2">
       <h1>What is TRC?</h1>
       <p class="npm">
@@ -127,33 +149,29 @@
           </p>
         </div>
         <div class="facilities-col">
-          <img src="images/DESIGNATION 6.png" />
+          <img src="images/trc_president.jpg" />
           <h3>President</h3>
-          <h4>Anirudh Vasudev</h4>
+          <h4>Ankith Motha</h4>
           <p>
-          Fourth Year MTech student,studying business analytics with 
-          a knack for technology and views research as a 
-          key to unlocking the mysteries of everything.He specialises 
-          in data analytics
+          An advocate of cutting-edge technologies with a passion for AI and Machine Learning. 
+          I firmly believe in knowledge dissemination and collective progress.
+          “Carpe Diem !”
           </p>
         </div>
         <div class="facilities-col">
-          <img src="images/DESIGNATION 3.png" />
+          <img src="images/trc_vp.jpg" />
           <h3>Vice-President</h3>
-          <h4>Harsh Malhotra</h4>
+          <h4>Gaurisankar S</h4>
           <p>
-            Fourth Year Undergraduate student studying electronics and computer
-            engineering. He is constanly enthralled by the newest technology
-            with primary interests in machine learning, financial analytics.
+            Purposeful and devoted to the goal of making the world a better place. A CS undergrad at VITC, I like  delving into AI and experimenting with the latest tech.
           </p>
         </div>
         <div class="facilities-col">
-          <img src="images/DESIGNATION 4.png" />
+          <img src="images/trc_gs.jpg" />
           <h3>General Secretary</h3>
-          <h4>Kanagha Santhoshini</h4>
+          <h4>Guhan Sambandam</h4>
           <p>
-            Fourth-year student of computer science engineering with specialization in AI and ML at VIT, Chennai. 
-           she has a keen interest in all technology and things
+            Computer Geek with a soft spot for anything on the cutting edge of Technology. My forte is Mobile Application Development and 3D VFX. Technology is best when it brings people together!
           </p>
         </div>
       </div>
@@ -200,7 +218,7 @@
         <div class="right-side">
           <div class="topic-text">Send us a message</div>
           <p>You can send us suggestions and any message here</p>
-          <form id="contact-form" method="post" action="contact.php" role="form">
+          <form id="contact-form" role="form" onSubmit="handleForm(); return false;"">
             <div class="input-box">
               <input  id="form_name" type="text" name="name" placeholder="Enter your name" />
             </div>
@@ -211,7 +229,7 @@
               <input id="form_message" name="message" placeholder="Enter your message" />
             </div>
             <div class="button">
-              <input type="button" name="submit" value="Send Now" />
+              <input id="submit" type="submit" name="submit" value="Send Now" />
             </div>
           </form>
         </div>
@@ -264,7 +282,9 @@
         <p>&copy; Tech Researchers Club 2023. All rights are Reserved.</p>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="scripts.js"></script>
+
   </body>
 </html>
 
