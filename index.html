@@ -13,6 +13,23 @@
       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Oxygen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init('ObkJuTzQvNLMseRl');
+      })();
+    </script>
+    <script>
+      const handleForm = async (e) => {
+        try {
+          await emailjs.sendForm('service_tcqgr9m', 'template_8kqw25j', {to_name: 'Tech Researchers Club', from_name: document.getElementById('form_name').value, message: document.getElementById('form_message').value, reply_to: document.getElementById('form_email').value});
+          alert('email sent!');
+        } catch (error) {
+          console.error(error);
+          alert('Failed to send email');
+        }
+      };
+    </script>
     <link
       rel="stylesheet"
       type="text/css"
@@ -196,7 +213,7 @@
         <div class="right-side">
           <div class="topic-text">Send us a message</div>
           <p>You can send us suggestions and any message here</p>
-          <form id="contact-form" role="form" action="contact.js" method="post" >
+          <form id="contact-form" role="form" onSubmit="handleForm()" >
             <div class="input-box">
               <input  id="form_name" type="text" name="name" placeholder="Enter your name" />
             </div>
@@ -262,7 +279,7 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="scripts.js"></script>
-    <script type="text/javascript" src="contact.js"></script>
+
   </body>
 </html>
 
